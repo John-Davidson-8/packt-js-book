@@ -45,9 +45,9 @@ let strToNr = "12";
 strToNr = Number(strToNr);
 console.log(strToNr, typeof strToNr);
 
-// let strToBool = "any string will return true";
-// strToBool = Boolean(strToBool);
-// console.log(strToBool, typeof strToBool);
+let strToBool = "any string will return true";
+strToBool = Boolean(strToBool);
+console.log(strToBool, typeof strToBool);
 
 /* Below are a couple of converter functions that the 
 book says I need to know well. For when I want to convert
@@ -102,7 +102,7 @@ let js = "yes";
 console.log(
   "Hello, my name is " +
     myName +
-    " I am" +
+    " I am " +
     age +
     " years old and I can code Javascript: " +
     js
@@ -157,7 +157,7 @@ console.log(z === t);
 // Chapter 3 Projects
 
 // Miles to KM Converter Exercise
-let miles = 6;
+let miles = 130;
 let mileToKmRatio = 1.60934;
 let kmTravel = miles * mileToKmRatio;
 console.log(
@@ -169,9 +169,24 @@ console.log(
     " kilometers"
 );
 
+/* Miles to Km from the book, done differently but 
+works the same */
+
+//Convert miles to kilometers.
+//1 mile equals 1.60934 kilometers.
+let myDistanceMiles = 130;
+let myDistanceKM = myDistanceMiles * 1.60934;
+console.log(
+  "The distance of " +
+    myDistanceMiles +
+    " miles is equal to " +
+    myDistanceKM +
+    " kilometers"
+);
+
 // BMI Exercise
 
-let inches = 67.99;
+let inches = 72;
 let inchToCm = 2.54;
 let inchToCmCalc = inches * inchToCm;
 console.log(inchToCmCalc);
@@ -179,10 +194,23 @@ console.log(inchToCmCalc);
 let squaredHeightInM = (inchToCmCalc * 2) / 100;
 console.log(squaredHeightInM);
 
-let pounds = 80;
+let pounds = 180;
 let poundsToKiloRatio = 2.2046;
 let poundsToKiloCalc = pounds * poundsToKiloRatio;
 console.log(poundsToKiloCalc);
 
 let bmi = poundsToKiloCalc / squaredHeightInM;
+console.log(bmi);
+
+/* BMI Exercise from the book, works the same as mine
+just done a different way! */
+
+//1 inch = 2.54 centimeters.
+//2.2046 pounds in a kilo
+let inches1 = 72;
+let pounds1 = 180;
+let weight = pounds1 / 2.2046; // in kilos
+let height = inches1 * 2.54; // height in centimetres
+console.log(weight, height);
+let bmi1 = weight / (((height / 100) * height) / 100);
 console.log(bmi);

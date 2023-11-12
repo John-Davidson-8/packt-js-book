@@ -56,7 +56,7 @@ console.log("Length of empty array:", emptyArray.length);
 
 /* When counting remember the index system! The length is always 
 one higher than the maximum index. This is why the max index will
-be 3 when the length is 4. The remember the non existant index 
+be 3 when the length is 4. The remember the non existent index 
 number. The code below shows us this */
 
 numbers = [12, 24, 36];
