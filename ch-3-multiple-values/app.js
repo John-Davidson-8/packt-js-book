@@ -80,3 +80,94 @@ const list = ["Milk", "Bread", "Apples"];
 console.log(list.length);
 list[1] = "Bananas";
 console.log(list);
+
+// Adding and Replacing Elements (p.53)
+favoriteFruits = ["grapefruit", "orange", "lemon"];
+favoriteFruits.push("tangerine");
+// Tangerine gets added to the end of the array
+// Push method returns length of the array like this
+let lengthOfFavoriteFruits = favoriteFruits.push("lime");
+console.log(favoriteFruits);
+console.log(lengthOfFavoriteFruits);
+
+// Splice() Method adds in elements and takes away elements
+let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"];
+arrOfShapes.splice(2, 0, "square", "trapezoid");
+console.log(arrOfShapes);
+
+// Concat() Method adds arrays together by creating a new array
+let arr5 = [1, 2, 3];
+let arr6 = [4, 5, 6];
+let arr7 = arr5.concat(arr6);
+console.log(arr7);
+
+// Concat() method can also add elements
+let arr8 = arr7.concat(7, 8, 9);
+console.log(arr8);
+
+// Deleting Elements using pop()
+arr8.pop();
+console.log(arr8);
+
+/* Remember splice() - it can also delete elements. We specify the 
+index from where we want to start deleting, and then the number of 
+elements we want to delete */
+
+// Deleting the first element is done with shift() method
+arr8.shift();
+console.log(arr8);
+
+/* Remember splice() - it can also delete elements. We specify the 
+index from where we want to start deleting, and then the number of 
+elements we want to delete */
+
+arr8.splice(1, 3);
+console.log(arr8);
+
+/* For deleting we can also use the operator delete, this is not
+a method, but we can use it to change the value of a certain 
+position of the array to be undefined */
+
+delete arr8[0];
+console.log(arr8);
+/* The delete operator is good for keeping the space as undefined */
+
+//Finding Elements with the find() method
+
+/* What will go in the find() method is different because it is 
+not a method, but actually a function. This function will be 
+executed on every element in the array until it finds a match, and
+if it does not, then it will return undefined */
+
+/* The following code snippet is doing the same thing two 
+different ways */
+
+arr8 = [2, 6, 7, 8];
+let findValue = arr8.find(function (e) {
+  return e === 6;
+});
+let findValue2 = arr8.find((e) => e === 10);
+console.log(findValue, findValue2);
+
+/* The log statement will log 6 and undefined because it can find
+an element that matches for 6, but not one that matches for 10 */
+
+// Indexof() method
+
+/* At times we not only want to find an element in an array, but 
+we also need to know in what position it is in the array. the 
+following code does this for us */
+
+arr8 = [2, 6, 7, 8];
+let findIndex = arr8.indexOf(6);
+let findIndex2 = arr8.indexOf(10);
+console.log(findIndex, findIndex2);
+
+/* The first one will return 1 as 6 in is position index 1 in the 
+array. The second will return -1 as 10 is not in the array. if you 
+want to find the next occurrence of the specified number, you can 
+add a second argument to indexOf(), specifying from which position 
+it should start searching: */
+
+arr8 = [2, 6, 7, 8];
+let findIndex3 = arr8.indexOf(6, 2);
