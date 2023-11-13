@@ -171,3 +171,64 @@ it should start searching: */
 
 arr8 = [2, 6, 7, 8];
 let findIndex3 = arr8.indexOf(6, 2);
+console.log(findIndex3);
+
+/* In this case the value of findIndex3 will be -1, because 6 cannot
+be found starting from index 2. */
+
+/* The last occurrence can also be found. This is done with the 
+lastIndexOf() method: */
+
+let animals = ["dog", "horse", "cat", "platypus", "dog"];
+let lastDog = animals.lastIndexOf("dog");
+console.log(lastDog);
+
+// Sorting
+/* There is also a built in method for sorting arrays. Numbers from 
+small to high and strings A-Z. You can sort() on an array and the 
+order of the values of the array will change to a sorted order */
+
+let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"];
+names.sort();
+console.log(names);
+
+let ages = [18, 72, 33, 56, 40];
+ages.sort();
+console.log(ages);
+
+// Reversing
+names.reverse();
+console.log(names);
+
+// Practice Exercise 3.2
+// List 1
+let myList = [];
+myList.push("milk", "bread", "apples");
+console.log(myList);
+myList.splice(1, 1, "bananas", "eggs");
+console.log(myList);
+const lastRemoved = myList.pop();
+console.log(lastRemoved);
+myList.sort();
+console.log(myList);
+let findMilk = myList.indexOf("milk");
+console.log(findMilk);
+myList.splice(1, 0, "carrots", "lettuce");
+console.log(myList);
+
+// List 2
+let myList2 = ["juice", "pop"];
+console.log(myList2);
+
+// Combine list 1 and list 2
+let myList3 = myList.concat(myList2);
+console.log(myList3);
+
+// Add list on again
+myList4 = myList3.concat(myList2);
+console.log(myList4);
+
+let lastIndexOfPop = myList4.lastIndexOf("pop");
+console.log(lastIndexOfPop);
+
+// Multidimensional Arrays
