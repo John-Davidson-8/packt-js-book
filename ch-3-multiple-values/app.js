@@ -232,3 +232,251 @@ let lastIndexOfPop = myList4.lastIndexOf("pop");
 console.log(lastIndexOfPop);
 
 // Multidimensional Arrays
+
+// Practice exercise 3.3
+
+const newArr = [1, 2, 3];
+newArr2 = [newArr, newArr, newArr];
+console.log(newArr2[0][1]);
+console.log(newArr2[1][1]);
+console.log(newArr2[2][1]);
+
+// Objects in Javascript
+
+let dog = {
+  weight: 2.4,
+  color: "brown",
+  breed: "chihuahua",
+  age: 3,
+  burglarBiter: true,
+};
+
+// Two ways of accessing any given value
+
+let dogColor1 = dog["color"];
+let dogColor2 = dog.color;
+
+// Updating Objects, once again two ways to do the same thing
+
+dog["color"] = "blue";
+dog.weight = 2.3;
+
+console.log(dog);
+
+// Can also change data type like so:
+
+dog["age"] = "three";
+console.log(dog);
+
+// Can also work with variables rather than literal string values
+
+let variable = "age";
+console.log(dog[variable]);
+
+/* If we change value of variable to another dog property we will
+be accessing another property like this: */
+
+variable = "breed";
+console.log(dog[variable]);
+
+// Practice exercise 3.4
+
+let myCar = {
+  make: "Ford",
+  model: "Fiesta",
+  petrol: true,
+  color: "blue",
+  engineSize: 1.3,
+};
+console.log(myCar);
+
+// I can change color two ways
+
+myCar["color"] = "pink";
+console.log(myCar);
+
+myCar.color = "green";
+console.log(myCar);
+
+// Book answer to practice 3.4
+
+const myCar1 = {
+  make: "Toyota",
+  model: "Camry",
+  tires: 4,
+  doors: 4,
+  color: "blue",
+  forSale: false,
+};
+
+let propColor = "color";
+myCar[propColor] = "red";
+propColor = "forSale";
+myCar1[propColor] = true;
+console.log(myCar1.make + "" + myCar1.model);
+console.log(myCar1.forSale);
+
+// Objects in Objects
+
+let company = {
+  companyName: "Healthy Candy",
+  activity: "food manufacturing",
+  address: {
+    street: "2nd Street",
+    number: "123",
+    zipCode: "33116",
+    city: "Miami",
+    state: "Florida",
+  },
+  yearOfEstablishment: 2021,
+};
+console.log(company);
+
+// As we can see our address is an embedded object, this can go deeper
+
+// To access or modify properties of address, two ways to do it
+
+company.address.zipCode = "33117";
+company["address"]["number"] = "100";
+console.log(company);
+
+// Arrays in Objects, simply change activity object to activities
+
+company = {
+  companyName: "Healthy Candy",
+  activities: [
+    "food manufacturing",
+    "improving kids' health",
+    "manufacturing toys",
+  ],
+  address: {
+    street: "2nd Street",
+    number: "123",
+    zipCode: "33116",
+    city: "Miami",
+    state: "Florida",
+  },
+  yearOfEstablishment: 2021,
+};
+// Now lets fetch second value of the array
+
+let activity = company.activities[1];
+
+console.log(company);
+
+// Objects in Arrays, an array of address objects
+
+let addresses = [
+  {
+    street: "2nd street",
+    number: "123",
+    zipCode: "33116",
+    city: "Miami",
+    state: "Florida",
+  },
+  {
+    street: "1st west avenue",
+    number: "5",
+    zipCode: "75001",
+    city: "Addison",
+    state: "Texas",
+  },
+];
+/* Arrays are recognized by their square brackets 
+and objects by their curly brackets */
+
+// Objects in Arrays in Objects. This is in the book.
+
+/* Arrays are for lists, objects are for representing 
+something with properties that have descriptive names.
+Object properties can be of any type */
+
+// Practice Exercise 3.5
+
+const people = {
+  friends: [],
+};
+const friend1 = {
+  first: "andrew",
+  second: "macarthur",
+  id: 1,
+};
+const friend2 = {
+  first: "roger",
+  second: "hunt",
+  id: 2,
+};
+const friend3 = {
+  first: "kenny",
+  second: "burns",
+  id: 3,
+};
+people.friends.push(friend1, friend2, friend3);
+console.log(people);
+
+// Chapter Projects
+
+const theList = [
+  "Laurence",
+  "Svekis",
+  true,
+  35,
+  null,
+  undefined,
+  { test: "one", score: 55 },
+  ["one", "two"],
+];
+//
+theList.shift();
+theList.pop();
+console.log(theList);
+theList.pop();
+theList.pop();
+theList.pop();
+theList.pop();
+theList.pop();
+console.log(theList);
+theList.unshift("FIRST");
+console.log(theList);
+theList[3] = "MIDDLE";
+theList[4] = "hello world";
+theList.push("LAST");
+console.log(theList);
+console.log(theList);
+theList.slice(2, 1);
+console.log(theList);
+theList[2] = "yo";
+console.log(theList);
+theList.splice(2, 1);
+console.log(theList);
+
+// Above is the long way of doing this lol
+
+// Company Product Catalogue my attempt
+
+const stuff = [];
+
+const item1 = {
+  name: "apple",
+  model: "iphone",
+  cost: 500,
+  quantity: 10,
+};
+const item2 = {
+  name: "samsung",
+  model: "galaxy",
+  cost: 700,
+  quantity: 20,
+};
+const item3 = {
+  name: "sony",
+  model: "playstation",
+  cost: 900,
+  quantity: 30,
+};
+
+stuff.push(item1, item2, item3);
+console.log(stuff);
+// Now must retrieve quantity element of third item
+console.log(stuff[2].quantity);
+// Worked a treat excellent!!!!

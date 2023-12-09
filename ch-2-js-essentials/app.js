@@ -35,7 +35,7 @@ let nr2 = "2";
 console.log(nr1 * nr2);
 
 /* Below are examples of functions that convert data
-types */
+types, notice the capital letters !*/
 
 let nrToStr = 6;
 nrToStr = String(nrToStr);
