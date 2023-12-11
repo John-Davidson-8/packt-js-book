@@ -5,13 +5,13 @@
 
 // Practice Exercise 4.1
 
-const sun = false;
-if (sun) {
-  console.log("I need to take my sun screen");
-}
-if (!sun) {
-  console.log("I don't need my sun screen");
-}
+// const sun = false;
+// if (sun) {
+//   console.log("I need to take my sun screen");
+// }
+// if (!sun) {
+//   console.log("I don't need my sun screen");
+// }
 
 // Practice Exercise 4.2
 
@@ -41,36 +41,36 @@ if (!sun) {
 
 // Practice Exercise 4.3
 
-const id = true;
-const message = id ? "Allowed in" : "Denied Entry";
-console.log(message);
+// const id = true;
+// const message = id ? "Allowed in" : "Denied Entry";
+// console.log(message);
 
 // Switch Statements (can be used instead of if else statements)
 // This includes the "default" at the end (same as else in if else)
-let activity;
-switch (activity) {
-  case "Get up":
-    console.log("It is 6:30AM");
-    break;
-  case "Breakfast":
-    console.log("It is 7:30AM");
-    break;
-  case "Drive to work":
-    console.log("It is 8:00AM");
-    break;
-  case "Lunch":
-    console.log("It is 12:00PM");
-    break;
-  case "Drive home":
-    console.log("It is 5:00PM");
-    break;
-  case "dinner":
-    console.log("It is 6;30PM");
-    break;
-  default:
-    console.log("I can't determine the time");
-    break;
-}
+// let activity;
+// switch (activity) {
+//   case "Get up":
+//     console.log("It is 6:30AM");
+//     break;
+//   case "Breakfast":
+//     console.log("It is 7:30AM");
+//     break;
+//   case "Drive to work":
+//     console.log("It is 8:00AM");
+//     break;
+//   case "Lunch":
+//     console.log("It is 12:00PM");
+//     break;
+//   case "Drive home":
+//     console.log("It is 5:00PM");
+//     break;
+//   case "dinner":
+//     console.log("It is 6;30PM");
+//     break;
+//   default:
+//     console.log("I can't determine the time");
+//     break;
+// }
 
 // Practice Exercise 4.4
 
@@ -166,7 +166,7 @@ in final output */
 // console.log(grade);
 
 // Practice Exercise 4.5
-/* create a variable called prize and us a prompt to ask the user
+/* create a variable called prize and use a prompt to ask the user
 to set the value by selecting a number between 0 and 10 */
 
 // let prize = prompt("Choose a number between 0 and 7");
@@ -211,25 +211,128 @@ variable strings and the output message string */
 
 // Exercise 4.5 Book Answer
 
-let prize = prompt("Pick a number between 0 and 10");
-prize = Number(prize);
-let output = "My Selection: ";
-switch (prize) {
-  case 0:
-    output += "Gold ";
-  case 1:
-    output += "Coin ";
-    break;
-  case 2:
-    output += "Big ";
-  case 3:
-    output += "Box of ";
-  case 4:
-    output += "Silver ";
-  case 5:
-    output += "Bricks ";
-    break;
-  default:
-    output += "Sorry try again!";
+// let prize = prompt("Pick a number between 0 and 10");
+// prize = Number(prize);
+// let output = "My Selection: ";
+// switch (prize) {
+//   case 0:
+//     output += "Gold ";
+//   case 1:
+//     output += "Coin ";
+//     break;
+//   case 2:
+//     output += "Big ";
+//   case 3:
+//     output += "Box of ";
+//   case 4:
+//     output += "Silver ";
+//   case 5:
+//     output += "Bricks ";
+//     break;
+//   default:
+//     output += "Sorry try again!";
+// }
+// console.log(output);
+// The above code is a good example of joining cases together
+
+// Chapter Projects
+
+// 1 Evaluating a Number Game Project
+/* Ask the user to enter a number and check whether it is greater than
+, equal to, or less than a dynamic number  value in your code. Output
+the result to the user */
+
+// Book answer
+
+// let val = prompt("What number?");
+// val = Number(val);
+// let num = 100;
+// let message2 = "nothing";
+// if (val > num) {
+//   message = val + " was greater than " + num;
+// } else if (val === num) {
+//   message = val + " was equal to " + num;
+// } else {
+//   message = val + " is less than " + num;
+// }
+// console.log(message);
+// console.log(message);
+
+// Friend Checker Game
+
+// let nameChoice = prompt("Enter a name");
+// switch (nameChoice) {
+//   case "Amanda":
+//     output = "yes your right";
+//     break;
+//   case "Sam":
+//     output = "yes it is him";
+//     break;
+//   default:
+//     output = "sorry don't know them";
+// }
+// console.log(output);
+
+// Book answer to friend check game
+
+// let person = prompt("enter a name");
+// let message;
+// switch (person) {
+//   case "John":
+//   case "Larry":
+//   case "Jane":
+//   case "Laurence":
+//     message = person + " is my friend";
+//     break;
+//   default:
+//     message = "I don't know " + person;
+// }
+// console.log(message);
+
+// Rock, Paper, Scissors
+
+// const myArr = ["Rock", "Paper", "Scissors"];
+// let computer = Math.floor(Math.random() * 3);
+// let player = Math.floor(Math.random() * 3);
+// let message = "player " + myArr[player] + "vs computer " + myArr[computer] + "";
+// if (player === computer) {
+//   message += "It's a tie";
+// } else if (player > computer) {
+//   if (computer == 0 && player == 2) {
+//     message += "Computer wins";
+//   } else {
+//     if (computer == 2 && player == 0) {
+//       message += "Player wins";
+//     } else {
+//       message += "Computer wins";
+//     }
+//   }
+// }
+// console.log(message);
+
+let choice = ["rock", "paper", "scissors"];
+let playerMessage = "you choose";
+let computerMessage = "computer chose";
+
+let playerChoice = prompt("Choose rock, paper or scissors");
+
+if (playerChoice === choice[0]) {
+  playerMessage = "You chose rock";
+} else if (playerChoice === choice[1]) {
+  playerMessage = "You chose paper";
+} else if (playerChoice === choice[2]) {
+  playerMessage = "You chose scissors";
+} else {
+  playerMessage = "You have to choose between rock, paper or scissors!";
 }
-console.log(output);
+console.log(playerMessage);
+
+let computerChoice = Math.floor(Math.random() * 3);
+if (computerChoice === 1) {
+  computerMessage = "computer chose rock";
+} else if (computerChoice === 2) {
+  computerMessage = "computer chose paper";
+} else {
+  computerMessage = "computer chose scissors";
+}
+console.log(computerMessage);
