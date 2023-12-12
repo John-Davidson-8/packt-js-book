@@ -347,6 +347,7 @@ if (
 ) {
   console.log("It is a tie");
 }
+
 // Player wins
 else if (playerChoice == choice[0] && computerChoice == 3) {
   console.log("You win! Rock beats Scissors!");
@@ -354,7 +355,6 @@ else if (playerChoice == choice[0] && computerChoice == 3) {
   console.log("You win! Paper beats rock!");
 } else if (playerChoice == choice[2] && computerChoice == 2) {
   console.log("You win scissors beats paper");
-
   // Computer wins
 } else if (playerChoice == choice[0] && computerChoice == 2) {
   console.log("You lose! Paper beats rock");
