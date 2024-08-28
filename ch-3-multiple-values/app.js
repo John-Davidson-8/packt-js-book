@@ -255,6 +255,8 @@ let dog = {
 
 let dogColor1 = dog["color"];
 let dogColor2 = dog.color;
+console.log(dogColor1);
+console.log(dogColor2);
 
 // Updating Objects, once again two ways to do the same thing
 

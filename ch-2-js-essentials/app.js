@@ -214,3 +214,12 @@ let height = inches1 * 2.54; // height in centimetres
 console.log(weight, height);
 let bmi1 = weight / (((height / 100) * height) / 100);
 console.log(bmi);
+
+// Prefix and Postfix Operators (See page 36)
+
+let nr = 2;
+console.log(nr++);
+console.log(nr);
+
+// let nr = 2;
+// console.log(++nr);
