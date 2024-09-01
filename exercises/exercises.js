@@ -43,25 +43,32 @@ let kmConvert = convertMilesToKm(miles);
 
 console.log(`the distance of ${kmConvert} kms is equal to ${miles} miles`);
 
-//BMI Calculator
-function inchesToCm(inches) {
-  return inches * 2.54;
-}
-function poundsToKg(pounds) {
-  return pounds * 2.2046;
-}
+// Chapter 3
 
-let inches = 10;
-let pounds = 10;
+// Exercise 3.1
 
-let calc1 = inchesToCm(inches);
-console.log(`the height is: ${calc1} cm`);
+const shoppingList = ["milk", "Bread", "apples"];
+console.log(shoppingList);
+console.log(shoppingList.length);
+shoppingList[1] = "bananas";
+console.log(shoppingList);
 
-let calc2 = poundsToKg(pounds);
-console.log(`the weight is: ${calc2} kg`);
+// Exercise 3.2
 
-let calc11 = calc1 * calc1;
-console.log(`${calc11} is the height squared`);
+const list = ["milk", "bread", "apples"];
+list.push("bananas", "eggs");
+list.pop();
+console.log(list);
+list.sort();
+console.log(list);
+console.log(list.indexOf("milk"));
+console.log(list);
+list.splice(2, 0, "carrots", "lettuce");
+console.log(list);
+let newList = shoppingList.concat(list);
+console.log(newList);
+console.log(newList.indexOf("carrots"));
 
-let bmi = calc2 / calc11;
-console.log(bmi);
+const anotherArray = [1, 2, 3];
+const nestedArray = [anotherArray, anotherArray, anotherArray];
+console.log(nestedArray);
