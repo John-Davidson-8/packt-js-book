@@ -69,3 +69,10 @@ company["address"]["street"] = "faith street";
 
 let companyColors = company.brandColors[0];
 console.log(companyColors);
+
+/* Objects in arrays and objects in arrays in objects */
+
+let newVar = company.activity[3].abroad;
+console.log(newVar);
+
+// Exercise 3.5
