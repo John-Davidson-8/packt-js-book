@@ -95,11 +95,8 @@ dog.weight = 2.3;
 
 console.log(dog);
 
-dog["age"] = "three";
-console.log(dog);
-
 let variable = "age";
-console.log(variable);
+console.log(dog[variable]);
 
 // Exercise 3.4
 
@@ -129,4 +126,8 @@ myCar[propColor] = true; // this is how to change value.
 console.log(myCar.make + " " + myCar.model);
 console.log(myCar.forSale);
 
-// Another go at these questions
+/* Another go at these questions. Make up another object and access and change properties */
+
+/* Q1 Write code that accesses properties of an object (2 ways) (hint; new variable) */
+
+/* Q2 show 2 ways to update property values within objects */
