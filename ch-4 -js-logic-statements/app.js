@@ -312,54 +312,79 @@ the result to the user */
 
 // Rock, Paper Scissors Again!!!
 
-let choice = ["rock", "paper", "scissors"];
-let playerMessage = "you choose";
-let computerMessage = "computer chose";
+// let choice = ["rock", "paper", "scissors"];
+// let playerMessage = "you choose";
+// let computerMessage = "computer chose";
 
-let playerChoice = prompt("Choose rock, paper or scissors");
+// let playerChoice = prompt("Choose rock, paper or scissors");
 
-if (playerChoice === choice[0]) {
-  playerMessage = "You chose rock";
-} else if (playerChoice === choice[1]) {
-  playerMessage = "You chose paper";
-} else if (playerChoice === choice[2]) {
-  playerMessage = "You chose scissors";
-} else {
-  playerMessage = "You have to choose between rock, paper or scissors!";
-}
-console.log(playerMessage);
+// if (playerChoice === choice[0]) {
+//   playerMessage = "You chose rock";
+// } else if (playerChoice === choice[1]) {
+//   playerMessage = "You chose paper";
+// } else if (playerChoice === choice[2]) {
+//   playerMessage = "You chose scissors";
+// } else {
+//   playerMessage = "You have to choose between rock, paper or scissors!";
+// }
+// console.log(playerMessage);
 
-let computerChoice = Math.floor(Math.random() * 3);
-if (computerChoice === 1) {
-  computerMessage = "computer chose rock";
-} else if (computerChoice === 2) {
-  computerMessage = "computer chose paper";
-} else {
-  computerMessage = "computer chose scissors";
-}
-console.log(computerMessage);
+// let computerChoice = Math.floor(Math.random() * 3);
+// if (computerChoice === 1) {
+//   computerMessage = "computer chose rock";
+// } else if (computerChoice === 2) {
+//   computerMessage = "computer chose paper";
+// } else {
+//   computerMessage = "computer chose scissors";
+// }
+// console.log(computerMessage);
 
-// Tie
-if (
-  (playerChoice == choice[0] && computerChoice == 1) ||
-  (playerChoice == choice[1] && computerChoice == 2) ||
-  (playerChoice == choice[2] && computerChoice == 3)
-) {
-  console.log("It is a tie");
-}
+// // Tie
+// if (
+//   (playerChoice == choice[0] && computerChoice == 1) ||
+//   (playerChoice == choice[1] && computerChoice == 2) ||
+//   (playerChoice == choice[2] && computerChoice == 3)
+// ) {
+//   console.log("It is a tie");
+// }
 
-// Player wins
-else if (playerChoice == choice[0] && computerChoice == 3) {
-  console.log("You win! Rock beats Scissors!");
-} else if (playerChoice == choice[1] && computerChoice == 1) {
-  console.log("You win! Paper beats rock!");
-} else if (playerChoice == choice[2] && computerChoice == 2) {
-  console.log("You win scissors beats paper");
-  // Computer wins
-} else if (playerChoice == choice[0] && computerChoice == 2) {
-  console.log("You lose! Paper beats rock");
-} else if (playerChoice == choice[1] && computerChoice == 3) {
-  console.log("You lose! Scissors beats paper");
-} else if (playerChoice == choice[2] && computerChoice == 1) {
-  console.log("You lose! Rock beats scissors");
-}
+// // Player wins
+// else if (playerChoice == choice[0] && computerChoice == 3) {
+//   console.log("You win! Rock beats Scissors!");
+// } else if (playerChoice == choice[1] && computerChoice == 1) {
+//   console.log("You win! Paper beats rock!");
+// } else if (playerChoice == choice[2] && computerChoice == 2) {
+//   console.log("You win scissors beats paper");
+//   // Computer wins
+// } else if (playerChoice == choice[0] && computerChoice == 2) {
+//   console.log("You lose! Paper beats rock");
+// } else if (playerChoice == choice[1] && computerChoice == 3) {
+//   console.log("You lose! Scissors beats paper");
+// } else if (playerChoice == choice[2] && computerChoice == 1) {
+//   console.log("You lose! Rock beats scissors");
+// }
+
+// Practice exercise 4.1
+// let sunny = false;
+// console.log(sunny);
+// if (sunny === true) {
+//   console.log("yes it is sunny, beach time!");
+// }
+// if (sunny !== true) {
+//   console.log("oh no it is not sunny!");
+// }
+
+// Exercise 4.2
+
+// let ageRequest = prompt("What is your age?");
+// let userAge = Number(ageRequest);
+// let message;
+// if (userAge >= 21) {
+//   message = "you are old enough to enter";
+// } else if (userAge >= 19) {
+//   message = "you can come in but not purchase alcohol";
+// } else {
+//   message = "you are not old enough to enter, sorry!";
+// }
+// console.log(message);
+// alert(message);
