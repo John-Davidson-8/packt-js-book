@@ -388,3 +388,26 @@ the result to the user */
 // }
 // console.log(message);
 // alert(message);
+
+// const id = false;
+// const message = id ? "Allowed in" : "Denied entry";
+// console.log(message);
+
+let randomNumber = Math.random();
+randomNumber = randomNumber * 6;
+randomNumber = Math.floor(randomNumber);
+let userInput = prompt("Ask me anything");
+switch (randomNumber) {
+  case 0:
+    answer = "it will work out";
+  case 1:
+    answer = "it will work out";
+  case 2:
+    answer = "it will work out";
+  case 3:
+    answer = "it will work out";
+  case 4:
+    answer = "it will work out";
+  case 5:
+    answer = "it will work out";
+}
