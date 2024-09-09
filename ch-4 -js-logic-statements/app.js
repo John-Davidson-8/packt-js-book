@@ -393,21 +393,63 @@ the result to the user */
 // const message = id ? "Allowed in" : "Denied entry";
 // console.log(message);
 
-let randomNumber = Math.random();
-randomNumber = randomNumber * 6;
-randomNumber = Math.floor(randomNumber);
-let userInput = prompt("Ask me anything");
-switch (randomNumber) {
-  case 0:
-    answer = "it will work out";
-  case 1:
-    answer = "it will work out";
-  case 2:
-    answer = "it will work out";
-  case 3:
-    answer = "it will work out";
-  case 4:
-    answer = "it will work out";
-  case 5:
-    answer = "it will work out";
-}
+// let randomNumber = Math.random();
+// randomNumber = randomNumber * 6;
+// randomNumber = Math.floor(randomNumber);
+
+/* the following code is the shortened version of
+the code above */
+
+// const randomNumber = Math.floor(Math.random() * 6);
+// console.log(randomNumber);
+// let answer = "Something went wrong";
+// let question = prompt("Ask me anything");
+
+// switch (randomNumber) {
+//   case 0:
+//     answer = "it will work out";
+//     break;
+//   case 1:
+//     answer = "Maybe, maybe not";
+//     break;
+//   case 2:
+//     answer = "Probably not";
+//     break;
+//   case 3:
+//     answer = "Highly likely";
+//     break;
+//   default:
+//     answer = "I don't know about that";
+// }
+// let output = "You asked me " + question + ". I think that " + answer;
+// console.log(output);
+
+// Exercise 4.5
+
+// let prize;
+// let userChoice = prompt("Pick a number between 1 and 10");
+// let modifiedUserChoice = Number(userChoice);
+// console.log(modifiedUserChoice);
+// let message = "My selection: ";
+
+// switch (modifiedUserChoice) {
+//   case 1:
+//   case 2:
+//     console.log("you win a small prize");
+//     break;
+//   case 3:
+//   case 4:
+//   case 5:
+//   case 6:
+//     console.log("you win a medium prize");
+//     break;
+//   case 7:
+//   case 8:
+//   case 9:
+//   case 10:
+//     console.log("you win a big prize");
+//     break;
+//   default:
+//     console.log("you win nothing, sorry! Please input a number");
+// }
+// console.log();
