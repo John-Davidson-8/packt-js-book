@@ -424,32 +424,70 @@ the code above */
 // let output = "You asked me " + question + ". I think that " + answer;
 // console.log(output);
 
-// Exercise 4.5
+// Chapter Projects
 
-// let prize;
-// let userChoice = prompt("Pick a number between 1 and 10");
-// let modifiedUserChoice = Number(userChoice);
-// console.log(modifiedUserChoice);
-// let message = "My selection: ";
+// Evaluating a Number Game
 
-// switch (modifiedUserChoice) {
-//   case 1:
-//   case 2:
-//     console.log("you win a small prize");
+// const staticNum = 5;
+// let userInput = prompt("Pick a number between 0 and 10");
+// console.log(userInput);
+// if (userInput < 5) {
+//   console.log(
+//     "Your number is " + userInput + " which is below our number of " + staticNum
+//   );
+// } else if (userInput === 5) {
+//   console.log(
+//     "You got it your number is: " +
+//       userInput +
+//       "we were looking for the number " +
+//       staticNum
+//   );
+// } else if (userInput > 5 && userInput <= 10) {
+//   console.log(
+//     "Your number is " +
+//       userInput +
+//       " however this above the number we are looking for which is " +
+//       staticNum
+//   );
+// } else {
+//   console.log("You did not input a number between 0 and 10");
+// }
+
+// const userName = prompt("What is your name?");
+// console.log(userName);
+// switch (userName) {
+//   case "Raymond":
+//     console.log(`hello ${userName} my friend`);
 //     break;
-//   case 3:
-//   case 4:
-//   case 5:
-//   case 6:
-//     console.log("you win a medium prize");
-//     break;
-//   case 7:
-//   case 8:
-//   case 9:
-//   case 10:
-//     console.log("you win a big prize");
+//   case "John":
+//     console.log(`hello ${userName} my friend`);
 //     break;
 //   default:
-//     console.log("you win nothing, sorry! Please input a number");
+//     console.log(`${userName} is not a name I know`);
 // }
-// console.log();
+
+// Rock Paper Scissors
+
+// const myArr = ["Rock", "Paper", "Scissors"];
+// let player = Math.floor(Math.random() * 3);
+// let computer = Math.floor(Math.random() * 3);
+// console.log(player);
+// console.log(computer);
+// let message =
+//   "player " + myArr[player] + " vs computer " + myArr[computer] + " ";
+// if (player === computer) {
+//   message += "it is a tie";
+// } else if (player > computer) {
+//   if (computer == 0 && player == 2) {
+//     message += "Computer wins";
+//   } else {
+//     message += "Player wins";
+//   }
+// } else {
+//   if (computer == 2 && player == 0) {
+//     message += "Player wins";
+//   } else {
+//     message += "Computer wins";
+//   }
+// }
+// console.log(message);
