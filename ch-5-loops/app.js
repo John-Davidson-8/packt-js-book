@@ -152,4 +152,22 @@ we get stuck in an infinite loop.
 // }
 // console.log(names);
 
-let gridArr;
+// let maxValue = 5;
+// let randomNumber = Math.floor(Math.random() * maxValue + 1);
+// console.log(randomNumber);
+// let correct = false; // flag
+// while (correct === false) {
+//   let userChoice = prompt(`pick a number between 1 - ${maxValue}`);
+//   userChoice = Number(userChoice);
+//   if (userChoice === randomNumber) {
+//     correct = true; //flag//
+//     console.log(
+//       `wow you got it, computer chose ${randomNumber} and you chose ${userChoice}`
+//     );
+//     break;
+//   } else if (userChoice < randomNumber) {
+//     console.log(`too low, go again`);
+//   } else {
+//     console.log(`too high, go again`);
+//   }
+// }
