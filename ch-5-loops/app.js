@@ -171,3 +171,46 @@ we get stuck in an infinite loop.
 //     console.log(`too high, go again`);
 //   }
 // }
+
+// practice 5.1 Again
+
+// let mValue = 5;
+// let computerNumber = Math.floor(Math.random() * mValue) + 1;
+// console.log(computerNumber);
+// let match = false;
+
+// while (!match) {
+//   let userInput = prompt(`Pick a number between 1 and ${mValue}`);
+//   userInput = Number(userInput);
+//   if (userInput === computerNumber) {
+//     match = true;
+//     console.log(
+//       `Great, you picked ${userInput} and computer picked ${computerNumber}, it is a match`
+//     );
+//   } else if (userInput < computerNumber) {
+//     console.log(`too low, go again`);
+//   } else {
+//     console.log(`too high, go again`);
+//   }
+// }
+
+// Exercise 5.2
+
+// let counter = 0;
+// let step = 5;
+// do {
+//   console.log(counter);
+//   counter += step;
+// } while (counter <= 100);
+
+// const myWork = [];
+
+// for (let i = 0; i < 10; i++) {
+//   let stat = i % 2 ? true : false;
+//   let temp = {
+//     name: `Lesson ${i}`,
+//     status: stat,
+//   };
+//   myWork.push(temp);
+// }
+// console.log(myWork);
