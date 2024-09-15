@@ -203,6 +203,7 @@ we get stuck in an infinite loop.
 //   counter += step;
 // } while (counter <= 100);
 
+// Exercise 5.3
 // const myWork = [];
 
 // for (let i = 0; i < 10; i++) {
@@ -214,3 +215,5 @@ we get stuck in an infinite loop.
 //   myWork.push(temp);
 // }
 // console.log(myWork);
+
+// Exercise 5.4
